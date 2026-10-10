@@ -1,0 +1,14 @@
+{
+  "name": "waitlist-browser-load",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "preflight": "node runner.mjs preflight",
+    "burst": "node runner.mjs burst",
+    "report": "node report.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.64.0"
+  },
+  "engines": { "node": ">=22" }
+}
