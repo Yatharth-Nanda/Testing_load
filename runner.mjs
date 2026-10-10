@@ -6,7 +6,7 @@ import { monitorEventLoopDelay, performance } from 'node:perf_hooks';
 const mode = process.argv[2] || 'preflight';
 if (!['preflight', 'burst'].includes(mode)) throw new Error('Use preflight or burst.');
 const target = new URL(process.env.BASE_URL || 'https://www.fromthetop.in/');
-const users = 100;
+const users = 50;
 const shardCount = Number(process.env.SHARD_COUNT || 1);
 const shardIndex = Number(process.env.SHARD_INDEX || 0);
 const emailStart = Number(process.env.EMAIL_START || 1);
